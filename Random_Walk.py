@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 17 20:56:28 2020
-
-@author: Bartek
-"""
 import csv
 import random
 import time
@@ -30,7 +24,7 @@ def plot(typ):
         
          shift_2D = [random.choice(shift), random.choice(shift)]
          shift_3D = [random.choice(shift), random.choice(shift), random.choice(shift)]
-    #     next_corr = list(map(sum, zip(start_corr, random.choice(possible_shifts))))
+
          next_corr_2D = list(map(sum, zip(start_corr_2D, shift_2D)))
          next_corr_3D = list(map(sum, zip(start_corr_3D, shift_3D)))
     
